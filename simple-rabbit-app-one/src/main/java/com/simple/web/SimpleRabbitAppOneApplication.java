@@ -53,5 +53,7 @@ public class SimpleRabbitAppOneApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SimpleRabbitAppOneApplication.class, args);
 	}
+	
+	// Try to push something
 
 }
