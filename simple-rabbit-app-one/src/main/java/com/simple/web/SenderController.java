@@ -17,6 +17,10 @@ public class SenderController {
 	
 	@RequestMapping("send")
 	public void send() {
-		rabbitTemplate.convertAndSend(SimpleRabbitAppOneApplication.topicExchangeName, "foo.bar.baz", "Hello from SenderController!");
+		rabbitTemplate.convertAndSend(
+				SimpleRabbitAppOneApplication.topicExchangeName,
+				"foo.bar.baz",
+				"Hello from SenderController"
+		);
 	}
 }
